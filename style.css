@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f3e6d8;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    min-height: 90vh;
+    margin: 1em;
+}
+
+img {
+    display: flex;
+    width: 600px;
+    border-radius: 12px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #fff;
+    width: 670px;
+    margin: 1em;
+    padding: 2em;
+    border-radius: 18px;
+}
+
+main p {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+h1 {
+    font-family: "Young Serif", sans-serif;
+    font-weight: 400;
+    margin: 0.5em 0;
+}
+
+h2 {
+    font-family: "Young Serif", sans-serif;
+    font-weight: 400;
+    color: #854632;
+    margin: 0.5em 0;
+    
+}
+
+.hr {
+    margin: 1.5em 0;
+    opacity: 0.2;
+}
+
+/* preparation */
+.preparation {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    /* height: 100px; */
+    margin: 1.5em 0;
+    padding: 1.5em;
+    background-color: #fff5fa;
+    color: #7b284f;
+    border-radius: 10px;
+}
+
+.preparation h2 {
+    font-family: "Outfit";    
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0 0 0.5em 0;
+}
+
+.preparation li {
+    margin-inline: 1.75em;
+    font-family: "Outfit";
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0.5em;
+    color: #333;
+}
+
+.preparation span {
+    font-weight: 600;
+}
+
+/* ingredients */
+.ingredients li {
+    line-height: 1.8;
+    margin-inline: 1em;
+    padding: 0 1.5em;
+    font-family: "Outfit";
+    font-weight: 300;
+    font-size: 14px;
+}
+
+/* instructions  */
+.instructions li {
+    line-height: 1.6;
+    margin-inline: 1em;
+    padding: 0.3em;
+    font-family: "Outfit";
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.instructions span {
+    font-weight: 600;
+}
+
+/* nutrition */
+.nutrition li {
+    line-height: 1.6;
+    margin-inline: 1em;
+    padding: 0.75em;
+    font-family: "Outfit";
+    font-weight: 300;
+    list-style: none;
+}
+
+.nutrition span {
+    color: #854632;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.nutrition hr {
+    opacity: 0.2;
+}
+
+/*  attribution */
+.attribution { 
+    display: flex;
+    font-size: 16px; 
+    gap: 2px;
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 768px) {
+    main, img, .preparation {
+        width: 100%;
+    
+    }
+}
+
+@media screen and (max-width: 650px) {
+    img {
+        min-width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    img {
+       width: 100%;
+    }
+    
+}
+
